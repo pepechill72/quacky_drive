@@ -1,0 +1,141 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &706425096346914553
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 8ca1fbdd4f291a74a861a774971a79e8,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 146.8
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8ca1fbdd4f291a74a861a774971a79e8,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.20000076
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8ca1fbdd4f291a74a861a774971a79e8,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 163.31
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8ca1fbdd4f291a74a861a774971a79e8,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8ca1fbdd4f291a74a861a774971a79e8,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8ca1fbdd4f291a74a861a774971a79e8,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8ca1fbdd4f291a74a861a774971a79e8,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8ca1fbdd4f291a74a861a774971a79e8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8ca1fbdd4f291a74a861a774971a79e8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8ca1fbdd4f291a74a861a774971a79e8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8ca1fbdd4f291a74a861a774971a79e8,
+        type: 3}
+      propertyPath: m_Name
+      value: car_police
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8ca1fbdd4f291a74a861a774971a79e8,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4922580188994744570}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8ca1fbdd4f291a74a861a774971a79e8,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4003144079990438933}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8ca1fbdd4f291a74a861a774971a79e8,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3498562277350238610}
+  m_SourcePrefab: {fileID: 100100000, guid: 8ca1fbdd4f291a74a861a774971a79e8, type: 3}
+--- !u!1 &363894574556443560 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8ca1fbdd4f291a74a861a774971a79e8,
+    type: 3}
+  m_PrefabInstance: {fileID: 706425096346914553}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4922580188994744570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363894574556443560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e741851cba3ad425c91ecf922cc6b379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"Speed","value":{"$content":30.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _objectReferences: []
+--- !u!114 &4003144079990438933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363894574556443560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"Kind":"Flow","collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":"Polic","summary":null,"pan":{"x":35.32864,"y":168.3453},"zoom":1.0,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-336.0,"y":-143.0},"guid":"57057c7d-7d2d-4d11-9960-df4b8f3687fd","$version":"A","$type":"Unity.VisualScripting.Start"},{"coroutine":false,"defaultValues":{},"position":{"x":-290.0,"y":62.0},"guid":"1fc68b18-9e3f-4bdc-bc19-e0ce9b12a81e","$version":"A","$type":"Unity.VisualScripting.Update"},{"chainable":false,"parameterNames":["x","y","z","relativeTo"],"member":{"name":"Translate","parameterTypes":["System.Single","System.Single","System.Single","UnityEngine.Space"],"targetType":"UnityEngine.Transform","targetTypeName":"UnityEngine.Transform","$version":"A"},"defaultValues":{"target":null,"%x":{"$content":0.0,"$type":"System.Single"},"%y":{"$content":0.0,"$type":"System.Single"},"%z":{"$content":0.0,"$type":"System.Single"},"%relativeTo":{"$content":"World","$type":"UnityEngine.Space"}},"position":{"x":375.0,"y":-56.0},"guid":"5db0c744-1835-4d83-86f9-58b0db09c27e","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"14"},{"coroutine":false,"defaultValues":{"key":{"$content":"E","$type":"UnityEngine.KeyCode"},"action":{"$content":"Hold","$type":"Unity.VisualScripting.PressState"}},"position":{"x":-179.0,"y":-80.0},"guid":"b0bab9a7-5b67-4fc4-81d5-61beb73e4363","$version":"A","$type":"Unity.VisualScripting.OnKeyboardInput","$id":"18"},{"specifyFallback":false,"kind":"Object","defaultValues":{"name":{"$content":"Speed","$type":"System.String"},"object":null},"position":{"x":-210.0,"y":195.0},"guid":"e0a1a538-4a5e-49fc-90f6-0149435b1ae8","$version":"A","$type":"Unity.VisualScripting.GetVariable","$id":"20"},{"defaultValues":{"b":{"$content":-1.0,"$type":"System.Single"}},"position":{"x":3.0,"y":200.0},"guid":"adc20270-e3e8-4a16-af08-61362916e776","$version":"A","$type":"Unity.VisualScripting.ScalarMultiply","$id":"22"},{"defaultValues":{"input":{"$content":0.0,"$type":"System.Single"}},"position":{"x":170.0,"y":196.0},"guid":"1c103db4-8ffe-4631-b2e3-513fe014b8ba","$version":"A","$type":"Unity.VisualScripting.ScalarPerSecond","$id":"24"},{"sourceUnit":{"$ref":"18"},"sourceKey":"trigger","destinationUnit":{"$ref":"14"},"destinationKey":"enter","guid":"13598c54-98ce-44e9-81d4-8ba6740b3d81","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"20"},"sourceKey":"value","destinationUnit":{"$ref":"22"},"destinationKey":"a","guid":"e726eccf-94b5-4b79-a27f-2038c87d31cb","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"22"},"sourceKey":"product","destinationUnit":{"$ref":"24"},"destinationKey":"input","guid":"78b60b8a-d08a-434f-9fc3-fbc7b0643573","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"24"},"sourceKey":"output","destinationUnit":{"$ref":"14"},"destinationKey":"%x","guid":"b81bb274-ca15-48be-bdb8-f6103932b064","$type":"Unity.VisualScripting.ValueConnection"}],"$version":"A"}}}'
+    _objectReferences: []
+--- !u!195 &3498562277350238610
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363894574556443560}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
