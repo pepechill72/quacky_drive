@@ -14,7 +14,7 @@ public class CallingTimeLine : MonoBehaviour
         {
             director.Play();
             gameObject.SetActive(false);
-            //other.gameObject.transform.position = pointParking.position;
+            other.gameObject.transform.position = pointParking.position;
         }
     }
 }

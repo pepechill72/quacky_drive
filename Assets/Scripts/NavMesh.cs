@@ -5,27 +5,57 @@ using UnityEngine.AI;
 
 public class NavMesh : MonoBehaviour
 {
-	public Transform target;
-	NavMeshAgent agent;
+    [SerializeField] private GameObject target;
 
-	void Start()
-	{
-		agent = GetComponent<NavMeshAgent>();
+    private NavMeshAgent agent;
+    private float timer;
+    private bool isChasing;
 
-	}
-
-
-	void Update()
-	{
-		agent.SetDestination(target.position);
-	}
-
-    private void OnTriggerEnter(Collider other)
+    void Start()
     {
-        if (other.gameObject.CompareTag("Car"))
+        agent = GetComponent<NavMeshAgent>();
+    }
+
+
+    void Update()
+    {
+        agent.SetDestination(target.transform.position);
+
+        Chas();
+    }
+
+    private void Chas()
+    {
+        if (isChasing)
         {
-			gameObject.SetActive(false);
-			Debug.Log("Догнали!");
-		}
+            timer += Time.deltaTime;
+
+            if (timer >= 3)
+                GameOver();
+        }
+    }
+
+    void GameOver()
+    {
+        Debug.LogError("Game Over!");
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Car"))
+        {
+            Debug.Log("Догнали!");
+            timer = 0;
+            isChasing = true;
+        }
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Car"))
+        {
+            Debug.Log("Убежал!");
+            isChasing = false;
+        }
     }
 }

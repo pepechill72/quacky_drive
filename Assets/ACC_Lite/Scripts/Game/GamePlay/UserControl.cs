@@ -34,9 +34,11 @@ public class UserControl :MonoBehaviour
 		else
 		{
 			//Standart input control (Keyboard or gamepad).
-			Horizontal = Input.GetAxis ("Horizontal");
-			Vertical = Input.GetAxis ("Vertical");
-			Brake = Input.GetButton ("Jump");
+			Horizontal = SimpleInput.GetAxis ("Horizontal");
+			Vertical = SimpleInput.GetAxis ("Vertical");
+			if (Vertical == 0)
+				Vertical = 1;
+			Brake = SimpleInput.GetButton ("Jump");
 		}
 
 		//Apply control for controlled car.

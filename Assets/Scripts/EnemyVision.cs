@@ -76,8 +76,6 @@ public class EnemyVision : MonoBehaviour
     }
 
     void Update()
-
-
     {
         if (Vector3.Distance(transform.position, _target.position) < distance)
         {
