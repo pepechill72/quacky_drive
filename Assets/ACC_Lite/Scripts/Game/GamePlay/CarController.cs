@@ -65,16 +65,16 @@ public class CarController :MonoBehaviour
 
 	float[] AllGearsRatio;															 //All gears (Reverce, neutral and all forward).
 
-	Rigidbody _RB;
+	public Rigidbody Rb;
 	public Rigidbody RB
 	{
 		get
 		{
-			if (!_RB)
+			if (!Rb)
 			{
-				_RB = GetComponent<Rigidbody> ();
+				Rb = GetComponent<Rigidbody> ();
 			}
-			return _RB;
+			return Rb;
 		}
 	}
 

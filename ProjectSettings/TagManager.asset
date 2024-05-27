@@ -8,6 +8,8 @@ TagManager:
   - ResetDriftCollision
   - Jewelry
   - WayPointNameHere
+  - Police
+  - SaveZone
   layers:
   - Default
   - TransparentFX

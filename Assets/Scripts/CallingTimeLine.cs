@@ -7,14 +7,21 @@ public class CallingTimeLine : MonoBehaviour
 {
     [SerializeField] private PlayableDirector director;
     [SerializeField] private Transform pointParking;
+    [SerializeField] private float timer = 8f;
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.CompareTag("Car"))
+        if (other.CompareTag("Car"))
         {
+            timer -= Time.deltaTime;
             director.Play();
-            gameObject.SetActive(false);
-            other.gameObject.transform.position = pointParking.position;
+            other.GetComponent<CarController>().Rb.isKinematic = true;
+
+            if (timer <= 0)
+            {
+                other.GetComponent<CarController>().Rb.isKinematic = false;
+                gameObject.SetActive(false);
+            }
         }
     }
 }
