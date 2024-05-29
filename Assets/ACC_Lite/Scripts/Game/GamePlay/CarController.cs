@@ -167,6 +167,21 @@ public class CarController :MonoBehaviour
 		{
 			Wheels[i].UpdateVisual ();
 		}
+
+		if (IsCarUpsideDown())
+		{
+			FlipCar();
+		}
+	}
+
+	bool IsCarUpsideDown()
+	{
+		return transform.up.y < 0.0f;
+	}
+
+	void FlipCar()
+	{
+		transform.Rotate(Vector3.right, 180.0f);
 	}
 
 	private void FixedUpdate ()
