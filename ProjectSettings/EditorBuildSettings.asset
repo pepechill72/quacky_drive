@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Demo BlendAI.unity
     guid: a66e5f1bb7e0e90469c3bcd8ae5c4b2d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Demo Blend 1.unity
     guid: 8dd2091a7de11f845ab43e3952329e7f
   - enabled: 1

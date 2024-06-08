@@ -68,7 +68,7 @@ public class NavMesh : MonoBehaviour
         }
     }
 
-    void GameOver()
+    public void GameOver()
     {
         Debug.LogError("Game Over!");
         SceneManager.LoadScene("LostScene");

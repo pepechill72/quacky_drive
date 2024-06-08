@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.31331939, g: 0.29408833, b: 0.51432693, a: 1}
+  m_IndirectSpecularColor: {r: 0.15044388, g: 0.15701121, b: 0.31624058, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1764,7 +1764,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 50331838}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.2493312, y: -0.66338444, z: 0.25082868, w: 0.65942407}
+  m_LocalRotation: {x: 0.24933124, y: -0.6633844, z: 0.25082862, w: 0.6594241}
   m_LocalPosition: {x: 139.8297, y: 16.938, z: 162.47179}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3258,6 +3258,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114098881066837142, guid: c3561634431fb8f40830bd4c3b642798,
+        type: 3}
+      propertyPath: Rb
+      value: 
+      objectReference: {fileID: 1258817792}
     - target: {fileID: 114474896981275778, guid: c3561634431fb8f40830bd4c3b642798,
         type: 3}
       propertyPath: WheelConfig.ForwardFriction
@@ -3574,6 +3579,10 @@ PrefabInstance:
         type: 3}
       insertIndex: 1
       addedObject: {fileID: 1258817791}
+    - targetCorrespondingSourceObject: {fileID: 1348947134348214, guid: c3561634431fb8f40830bd4c3b642798,
+        type: 3}
+      insertIndex: 8
+      addedObject: {fileID: 1258817799}
     - targetCorrespondingSourceObject: {fileID: 1918210878683530, guid: c3561634431fb8f40830bd4c3b642798,
         type: 3}
       insertIndex: -1
@@ -34577,6 +34586,26 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!54 &1258817792 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 54073378191953874, guid: c3561634431fb8f40830bd4c3b642798,
+    type: 3}
+  m_PrefabInstance: {fileID: 93422697}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1258817799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258817782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2018bfafd6165d944b5be1b2fc2a7c01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  _maxHealth: 100
 --- !u!1001 &1259494840
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37476,7 +37505,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1389407237}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.2493312, y: -0.66338444, z: 0.25082868, w: 0.65942407}
+  m_LocalRotation: {x: 0.24933124, y: -0.6633844, z: 0.25082862, w: 0.6594241}
   m_LocalPosition: {x: 139.8297, y: 16.938, z: 162.47179}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
